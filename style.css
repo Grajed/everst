@@ -1,0 +1,361 @@
+/*importando fontes*/
+
+/*Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/*Plus Jakarta Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+
+/*Bebas Neue*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*Exo 2*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap');
+
+/*Configurações gerais*/
+
+body {
+    text-align: center;
+    margin: 0;
+    background-color: rgb(26, 26, 26);
+}
+h1 {
+    color: white;
+    font-family: 'Bebas Neue';
+}
+h3 {
+    font-family: 'Exo 2';
+}
+
+p {
+    color: white;
+    font-size: 150%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-family: 'Plus Jakarta Sans';
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/*para a tela do meu pc*/
+
+@media only screen and (max-width: 1920px) {
+    /*Heading da pag*/
+    .header {
+        background-color: rgb(16, 0, 41);
+        height: 8%;
+        width: 100%;
+    }
+    /*botões do header*/
+    .header button {
+        display: inline-block;
+        position: relative;
+        background-color: rgb(16, 0, 41);;
+        transition-duration: 0.4s;
+        left: 27%;
+        top: -35%;
+        margin: 0;
+        border: 0;
+        width: 8%;
+        height: 100%;
+        font-size: 100%;
+        color: white;
+    }
+    .header button:hover {
+        background-color: rgb(52, 0, 134);    
+    }
+    /*imagem da logo do projeto*/
+    #projectLogo{
+        height: 50px;
+        padding-top: 0.5%;
+        display: inline-block;
+        position: relative;
+        right: 25%;
+    }
+    footer {
+        background-color: rgb(74, 30, 197);
+        height: 20%;
+    }
+    /*imagem da logo do projeto*/
+    .block{
+        /*background-color: rgb(20, 77, 116);*/
+        height: 50%;
+    }
+    .block h1{
+        position: relative;
+        left: 0%;
+        top: 35%;
+    }
+    #pageTitle{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 700%;
+    } #subtitulo{
+        position: relative;
+        left: 50%;
+    }
+    .title {
+        font-size: 500%;
+    }
+    /*Imagens de cada bloco*/
+    #b1{
+        background-image: url("images/pageWallpaper.png");
+        position: absolute;
+        width: 100%;
+        height: 117%;
+        background-size: 100%;
+        top: 8%;
+        padding-top: 0;
+    }
+    #b1 h1{
+        text-align: left;
+        left: 10%;
+        top: 1.5%;
+    }
+    /*#b2{}*/
+    #b2 h1{
+        width: 97.5%;
+        text-align: right;
+    }
+    #b3{
+        background-size: 50%;
+    }
+    #b3 h1{
+        text-align: left;
+        left: 5%;
+        top: 60%;
+    }
+    /*Conteúdo alternado*/
+    .rightAltContent {
+        position: relative;
+        border-bottom: 300px solid rgb(52, 0, 134);
+        border-left: 0px solid transparent;
+        border-right: 25px solid transparent;
+        height: 0%;
+        width: 50%;
+        margin: 0;
+    } .rightAltContentImg{
+        position: absolute;
+        top: 100%;
+        width: 50%;
+     }
+    .leftAltContent {
+        position: relative;
+        border-bottom: 300px solid rgb(52, 0, 134);
+        border-left: 25px solid transparent;
+        border-right: 0px solid transparent;
+        height: 0%;
+        width: 50%;
+        left: 48%;
+        margin-right: 0;
+    } .leftAltContentImg{
+        position: absolute;
+        top: 160%;
+        width: 40%;
+        left: 5%;
+    }
+    #RightAltContentImg2{
+        position: absolute;
+        top: 222%;
+        width: 20%;
+        left: 65%;
+    }
+    /*Logos que vem abaixo do primeiro parágrafo sobre o projeto*/
+    .txtLogos {
+        height: 100px;
+    }
+    .exemplosProjetos{
+        align-items: center;
+    }
+    .diagramaEcossistema{
+        height: 700px;
+    }
+    /*seção da comunidade*/
+    .communityLinks {
+        padding-top: 1%;
+        font-size: 200%;
+        font-family: 'Exo 2';
+        padding-bottom: 2.5%;
+    } .communityLinks a{
+        border: 2px solid;
+        border-color: rgb(92, 0, 79);
+        border-radius: 10px;
+        padding: 1%;
+    } .communityLinks :hover{
+        color: aqua;
+        border-color: aqua;
+    }
+    /*Quadro de membros*/
+    .teamBoard{
+        background-color: rgb(0, 0, 84);
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    /*Member card*/
+    .teamMember{
+        position: relative;
+        padding-top: 1%;
+        margin-top: 1%;
+        background-color: black;
+        width: 30%;
+        display: inline-block;
+        border: 5px solid;
+        border-radius: 10px;
+        border-color: aqua;
+    } .teamMember a{
+        color: aqua;
+    } .teamMember a :hover{
+        color: rgb(0, 0, 84);
+    }.teamMember h3{
+        color: aqua;
+    } .teamMember h2{
+        color: aqua;
+    }
+    .teamMemberImage{
+        height: 80px;
+        width: 80px;
+        border-radius: 80px;
+    } .teamMemberLinkedin{
+        color: rgb(0, 0, 84);
+    }
+
+}
+
+/*Styles para algumas telas que podem vir a serem usadas*/
+
+@media only screen and (max-width: 1366px) {
+    .header {
+        height: 10%;
+    }
+    #b1 {
+        top: 10%;
+    }
+    .block h1 {
+        top: 30%;
+    }
+    #pageTitle {
+        top: 50%;
+    }
+    .blockText{
+        font-size: 90%;
+    }
+    .leftAltContentImg {
+        top: 170%;
+    }
+    #rightAltContentImg2{
+        top: 242%;
+    }
+}
+
+
+/*Styles para mobile*/
+
+@media only screen and (max-width: 1080px) {
+    .header{
+        width: 110%;
+    }
+    .header h1{
+        display: none;
+    } #pageTitle{
+        font-size: 800%;
+    }
+    #subtitulo {
+        font-size: 300%;
+    }
+    .header button {
+        width: 100%;
+        height: 70%;
+        left: 0;
+        top: 0;
+        font-size: 300%;
+    }
+    #projectLogo {
+        position: absolute;
+    }
+
+    #b1{
+        background-image: url("images/pageWallpaperMobile.jpg");
+        background-size: 100%;
+        background-color: blue;
+        width: 110%;
+        height: 90%;
+        top: 21%;
+    }
+    #uselessBlock {
+        display: none;
+    }
+    .rightAltContent {
+        position: relative;
+        /*border-bottom: 300px solid rgb(52, 0, 134);
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent;*/
+        background-color: rgb(52, 0, 134);
+        height: 20%;
+        width: 110%;
+        margin: 0;
+        font-size: 200%;
+        background-size: 300%;
+    } .rightAltContent h1{
+        padding-top: 1%;
+    } 
+    .rightAltContentImg{
+        position: relative;
+        top: 0%;
+        width: 50%;
+        left: 5%;
+     }
+    
+    .leftAltContent {
+        position: relative;
+        /*border-bottom: 300px solid rgb(52, 0, 134);
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent;*/
+        background-color: rgb(52, 0, 134);
+        height: 20%;
+        width: 110%;
+        left: 0%;
+        margin: 0;
+        font-size: 200%;
+    } .rightAltContent h1{
+        padding-top: 1%;
+    } 
+    .leftAltContentImg{
+        position: relative;
+        top: 0%;
+        width: 50%;
+     }
+
+    #RightAltContentImg2{
+        position: relative;
+        top: 2%;
+        width: 20%;
+        left: 0%;
+    }
+    .about{
+        padding-top: 10%;
+        width: 110%;
+    }
+    .comunidade{
+        width: 110%;
+    } .communityLinks a{
+        width: 100%;
+        display: block;
+    }
+    .teamBoard{
+        width: 110%;
+    }
+    .teamMember{
+        width: 95%;
+    }
+    footer{
+        width: 110%;
+    }
+}
